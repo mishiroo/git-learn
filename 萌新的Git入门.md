@@ -63,7 +63,7 @@ git remote -v  # 查询远端仓库的地址
 
 ## 奇怪的知识
 
-Git 中 常常见到origin 为什么使用这个词语?
+**Git 中 常常见到origin 为什么使用这个词语?**
 
 [(9 封私信 / 80 条消息) Git 里面的 origin 到底代表啥意思? - 知乎 (zhihu.com)](https://www.zhihu.com/question/27712995)
 
@@ -82,3 +82,7 @@ Git 中 常常见到origin 为什么使用这个词语?
 ## 常见bug修复
 
 注意检查自己所在的分支是不是搞混main和master 可能会有超出预期的错误
+
+
+
+提交时，注意不要让自己的版本落后于远端版本 所以需要先pull远端修改再push你的修改内容
