@@ -57,6 +57,14 @@ git push -u origin main        //把本地仓库的文件推送到远程仓库ma
 
 ```
 git remote -v  # 查询远端仓库的地址
+
+git status  # 查询文件状态
+
+# 删除已经add的文件
+git rm --cached "文件路径"  # 只删除缓存，不会物理删除文件
+git rm --f "文件路径"  # 物理上也把文件删除了
+
+
 ```
 
 
