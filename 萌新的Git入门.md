@@ -35,8 +35,8 @@ git commit -m “first commit”      //添加文件描述信息
 git remote add origin  远程仓库地址 //链接远程仓库 
 git remote set-url origin xxxxx.git //修改远程仓库地址
 
-git pull origin main           // 把本地仓库的变化连接到远程仓库master分支
-git push -u origin main        //把本地仓库的文件推送到远程仓库master分支
+git pull origin main           // 把本地仓库的变化连接到远程仓库main分支
+git push -u origin main        //把本地仓库的文件推送到远程仓库main分支
 ```
 
 ==.gitignore==:
@@ -47,15 +47,19 @@ git push -u origin main        //把本地仓库的文件推送到远程仓库ma
 
 
 
-==pull==字如其名是把网上的代码拔下来到自己本地
+pull字如其名是把网上的代码拔下来到自己本地
 
-==push==字面意思是推，把自己写好的代码推到github上
+push字面意思是推，把自己写好的代码推到github上
 
 
 
 ## 一些重要的命令
 
 ```
+git branch  # 查看本地分, *号标记当前所在分支
+git branch -d (branchName)  # 删除分支
+git branch -m master main  # 把名为master的分支改为main(只修改了名字)
+
 git remote -v  # 查询远端仓库的地址
 
 git status  # 查询文件状态
