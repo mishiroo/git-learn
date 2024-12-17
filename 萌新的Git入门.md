@@ -132,9 +132,17 @@ print("Hello World from main branch")  # main branch
 print("Hello World from dev branch")  # dev branch
 ```
 
-![image-20241217195317498](assets/image-20241217195317498.png)
+![cc98b3dfc5f9e2dc1ce67d92443a0c87](assets/cc98b3dfc5f9e2dc1ce67d92443a0c87.png)
 
 合并过程：在master分支上，右键点击想要合并的分支，点击合并`dev`至当前的分支
+
+
+
+### push
+
+提交我们的代码，点击推送，设置好我们的仓库地址即可~
+
+
 
 
 
