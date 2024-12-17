@@ -6,6 +6,19 @@ Reference: [菜鸟教程](https://www.runoob.com/git/git-basic-operations.html) 
 
 
 
+**连接超时！**
+
+在git bash输入
+
+```
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
+```
+
+参考: [完美解决 git 报错 “fatal: unable to access ‘https://github.com/.../.git‘: Recv failure Connection was rese-CSDN博客](https://blog.csdn.net/qq_43546721/article/details/139506583)
+
+
+
 版本管理系统主要分为两类: **集中式, 分散式**.
 
 **集中式**的特点是只有一个仓库供大家使用，所有的操作必须在与网络连接的条件下使用。
