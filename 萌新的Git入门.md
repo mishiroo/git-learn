@@ -113,6 +113,31 @@ alt+shift+c: 提交代码
 
 
 
+### merge
+
+合并分支。
+
+使用场景：
+
+发布分支: main
+
+开发者拉取debug分支修复bug，修好了再merge到main分支
+
+
+
+例子:
+
+```
+print("Hello World from main branch")  # main branch
+print("Hello World from dev branch")  # dev branch
+```
+
+![image-20241217195317498](assets/image-20241217195317498.png)
+
+合并过程：在master分支上，右键点击想要合并的分支，点击合并`dev`至当前的分支
+
+
+
 ## 命令行交互
 
 ```
