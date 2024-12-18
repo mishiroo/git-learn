@@ -1,23 +1,8 @@
-Reference: [菜鸟教程](https://www.runoob.com/git/git-basic-operations.html) &《跟Wakaba酱一起学Git使用》
+# 跟Wakaba酱一起学Git使用
 
-> Git每一次提交都要设置注释
->
-> git会帮我们记录who what when, 但无法记录why, 养成写清楚注释的好习惯, 便于代码回滚
+## 你需要知道的小知识
 
-
-
-**连接超时！**
-
-在git bash输入
-
-```
-git config --global --unset http.proxy 
-git config --global --unset https.proxy
-```
-
-参考: [完美解决 git 报错 “fatal: unable to access ‘https://github.com/.../.git‘: Recv failure Connection was rese-CSDN博客](https://blog.csdn.net/qq_43546721/article/details/139506583)
-
-
+### 什么是git?
 
 版本管理系统主要分为两类: **集中式, 分散式**.
 
@@ -28,10 +13,6 @@ git config --global --unset https.proxy
 
 
 
-
-# 跟Wakaba酱一起学Git使用
-
-## 你需要知道的小知识
 
 ### **Git 中 常常见到origin 为什么使用这个词语?**
 
@@ -49,9 +30,15 @@ git config --global --unset https.proxy
 
 
 
+### 为什么commit强制写点什么?
+
+git会帮我们记录who what when, 但无法记录why, 养成写清楚注释的好习惯, 便于代码回滚
+
+
+
 ### **在哪里托管代码？**
 
-在github/Bitbucket上可以创建远程仓库，本文在github上托管代码:gem:
+在github/Bitbucket上可以创建远程仓库
 
 进行github上的仓库主要分public/private两种类型，private通常会限制协助开发者数量最多为3人(不付费的情况).
 
@@ -74,6 +61,14 @@ git config --global --unset https.proxy
 ![image-20241217191540671](assets/image-20241217191540671.png)
 
 
+
+## Gitee
+
+与现实妥协了，github经常连不上，特别是pull和push非常滴高血压.
+
+gitee最大的好处是连接非常稳定，再也不需要magic🧙‍♀️了, 还是中文平台！(虽说广子有点多)
+
+![image-20241217212501662](assets/image-20241217212501662.png)
 
 ## SourceTree
 
@@ -104,6 +99,8 @@ branch显示
 ```
 f5: 刷新页面
 alt+shift+c: 提交代码
+cttl+shift+p: push到远端
+ctrl+shift+l: pull远端到本地
 ```
 
 
@@ -240,6 +237,17 @@ git rm --f "文件路径"  # 物理上也把文件删除了
 
 注意检查自己所在的分支是不是搞混main和master 可能会有超出预期的错误
 
-
-
 提交时，注意不要让自己的版本落后于远端版本 所以需要先pull远端修改再push你的修改内容
+
+
+
+**连接超时！**(github经常出现这个问题, 国内使用gitee99.9%不会出现)
+
+在git bash输入
+
+```
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
+```
+
+参考: [完美解决 git 报错 “fatal: unable to access ‘https://github.com/.../.git‘: Recv failure Connection was rese-CSDN博客](https://blog.csdn.net/qq_43546721/article/details/139506583)
