@@ -154,6 +154,12 @@ print("Hello World from dev branch")  # dev branch
 
 
 
+###  冲突处理
+
+同一行代码，同一时间被不同的人修改: c
+
+
+
 
 
 ## 命令行交互
